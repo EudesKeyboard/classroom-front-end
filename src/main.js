@@ -12,8 +12,10 @@ Vue.use(VueRouter)
 
 import routes from './router'
 import VuexStore from './vuex/store'
+import vuetify from './plugins/vuetify'
+import i18n from './i18n'
 
-const store = new Vuex.Store(VuexStore);
+const store = new Vuex.Store(VuexStore)
 const router = new VueRouter({
   routes
 })
@@ -23,7 +25,9 @@ sync(store, router)
 Vue.config.productionTip = false
 
 new Vue({
-  render: h => h(App),
   router,
   store,
+  vuetify,
+  i18n,
+  render: h => h(App),
 }).$mount('#app')

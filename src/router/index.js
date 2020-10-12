@@ -1,10 +1,10 @@
-import Hello from '../components/Hello'
+import Dashboard from '../components/Dashboard'
 
 const routes = [
   {
     path: '/',
-    name: 'Hello',
-    component: Hello
+    name: 'Dashboard',
+    component: Dashboard
   }
 ];
 
